@@ -15,7 +15,7 @@ import { JwtStrategy } from './jwt.strategy';
     PassportModule,
     JwtModule.register({
       secret: 'SEU_SEGREDO_SUPER_SECRETO', // Mude isso em produção!
-      signOptions: { expiresIn: '1h' }, // O token expira em 1 hora
+      signOptions: { expiresIn: '60m' }, // O token expira em 1 hora
     }),
   ],
   controllers: [AuthController],
